@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+numpy
+pandas
+scikit-learn
+lightgbm
+torch
+requests
+celery[redis]
+redis
+web3
+openmeteo-requests

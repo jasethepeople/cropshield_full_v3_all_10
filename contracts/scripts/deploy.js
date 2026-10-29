@@ -1,0 +1,1 @@
+const hre = require('hardhat'); async function main(){ const USDC = process.env.USDC_ADDRESS; const ORACLE = (await hre.ethers.getSigners())[0].address; const C = await hre.ethers.getContractFactory('CropShield'); const c = await C.deploy(USDC, ORACLE); await c.waitForDeployment(); console.log('Deployed', await c.getAddress()); } main();
